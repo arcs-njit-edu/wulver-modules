@@ -1,0 +1,14 @@
+#%Module1.0#######################################################################
+## apptainer modulefile
+##
+proc ModulesHelp { } {
+
+        puts stderr "\tAdds apptainer to your environment"
+}
+
+module-whatis    "Adds apptainer to your environment"
+
+set              root    /cm/local/apps/apptainer/current
+
+prepend-path     PATH    $root/bin
+prepend-path     MANPATH $root/share/man

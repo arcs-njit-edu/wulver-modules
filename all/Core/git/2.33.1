@@ -1,0 +1,13 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+
+proc ModulesHelp { } {
+  puts stderr "\tAdds Git to your environment variables,"
+}
+
+module-whatis "adds Git to your environment variables"
+
+set             root            /cm/shared/apps/git/2.33.1
+prepend-path    PATH            $root/bin
